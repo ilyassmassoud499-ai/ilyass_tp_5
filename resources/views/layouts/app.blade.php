@@ -35,7 +35,7 @@
     </div>
 </div>
 
-<!-- Footer -->
+
 <footer class="text-center py-3 mt-4">
     © 2026 - TP Laravel
 </footer>

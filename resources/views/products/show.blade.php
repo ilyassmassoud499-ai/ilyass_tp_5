@@ -3,19 +3,22 @@
 @section('content')
 
 <a href="{{ route('products.index') }}" class="btn btn-secondary mb-3">
-     Retour
+
+Retour
+
 </a>
 
-<div class="card">
-    <div class="card-body">
-        <img src="{{ asset('images/'.$product['image']) }}" 
-             class="img-fluid mb-3" 
-             style="height:300px; object-fit:contain">
+<div class="card p-4">
 
-        <h2>{{ $product['title'] }}</h2>
-        <p class="text-success">{{ $product['price'] }}</p>
-        <p>{{ $product['description'] }}</p>
-    </div>
+<img src="{{ asset('images/'.$product['image']) }}"
+style="height:300px; object-fit:contain">
+
+<h3>{{ $product['title'] }}</h3>
+
+<p>{{ $product['price'] }}</p>
+
+<p>{{ $product['description'] }}</p>
+
 </div>
 
 @endsection
