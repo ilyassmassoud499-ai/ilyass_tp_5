@@ -1,13 +1,44 @@
-@extends('layouts.app')
+@extends('layouts.main')
+
+@section('image')
+
+<img src="https://picsum.photos/1200/300" class="img-fluid">
+
+@endsection
 
 @section('content')
 
-<h1>Bienvenue sur notre catalogue</h1>
+<h2>Accueil</h2>
 
-<a href="{{ route('products.index') }}" class="btn btn-primary">
+<div class="row">
 
-Voir les produits
+<div class="col-md-4">
+<x-article
+image="https://picsum.photos/300"
+titre="Activités"
+texte="Les activités de notre école"
+url="#"
+/>
+</div>
 
-</a>
+<div class="col-md-4">
+<x-article
+image="https://picsum.photos/301"
+titre="Sorties"
+texte="Sorties pédagogiques"
+url="#"
+/>
+</div>
+
+<div class="col-md-4">
+<x-article
+image="https://picsum.photos/302"
+titre="Vie scolaire"
+texte="Vie des élèves"
+url="#"
+/>
+</div>
+
+</div>
 
 @endsection

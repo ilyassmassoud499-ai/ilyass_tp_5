@@ -18,14 +18,6 @@
     <div class="row">
 
   
-        <div class="col-md-2 sidebar p-3">
-            <h6 class="text-muted">NAVIGATION</h6>
-
-            <a href="{{ route('home') }}">Accueil</a>
-            <a href="{{ route('products.index') }}">Produits</a>
-            <a href="{{ route('about') }}">À propos</a>
-            <a href="{{ route('contact') }}">Contact</a>
-        </div>
 
     
         <div class="col-md-10 p-4">
